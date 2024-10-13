@@ -4,20 +4,19 @@ int main() {
     std::string prev_word, word;
     bool first_word = true;
     while (true){
-        std::cout <<"ÇëÊäÈëÒ»¸öµ¥´Ê£¨ÊäÈë'exit'½áÊø£©£º";
+        std::cout <<"è¯·è¾“å…¥ä¸€ä¸ªå•è¯ï¼ˆè¾“å…¥'exit'ç»“æŸï¼‰ï¼š";
         std::cin >> word;
         if (word =="exit"){
             break;
         }
         if (!first_word && word ==prev_word){
-            std::cout <<"Á¬ÐøÖØ¸´³öÏÖµÄµ¥´ÊÊÇ£º"<<word << std::endl;
-            break;
+            std::cout <<"è¿žç»­é‡å¤å‡ºçŽ°çš„å•è¯æ˜¯ï¼š"<<word << std::endï¼›
         }
         prev_word = word;
         first_word = false;
     }
     if(first_word || prev_word != word){
-        std::cout <<"Ã»ÓÐÈÎºÎµ¥´ÊÊÇÁ¬ÐøÖØ¸´³öÏÖµÄ¡£"<< std::endl;
+        std::cout <<"æ²¡æœ‰ä»»ä½•å•è¯æ˜¯è¿žç»­é‡å¤å‡ºçŽ°çš„ã€‚"<< std::endl;
     }
     return 0;
 }
